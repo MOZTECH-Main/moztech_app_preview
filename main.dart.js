@@ -99483,7 +99483,7 @@ A.ZW.prototype={
 m(a){var s,r=null,q=A.J(30),p=A.am(B.u,1),o=A.f(a).ok.f
 o=A.i("\u628a\u60f3\u6cd5\u5148\u4fdd\u5b58\u4e0b\u4f86",r,r,r,o==null?r:o.dT(B.ag),B.aa,r,r)
 s=A.f(a).ok.z
-return A.E(r,A.X(A.b([B.a_h,B.t,o,B.K,A.i("\u5f9e Capture \u5efa\u7acb\u9304\u97f3\u3001\u63d0\u9192\u6216\u7522\u54c1\u60f3\u6cd5\uff0c\u4e4b\u5f8c\u518d\u6574\u7406\u6210\u5f85\u8fa6\u3002",r,r,r,s==null?r:s.h_(B.o,1.45),B.aa,r,r),B.w,new A.d6("\u65b0\u589e\u8a18\u9304",this.c,!1,B.hO,r)],t.p),B.k,r,B.c,B.f),B.h,r,r,new A.I(B.i,r,p,q,B.nH,r,B.l),r,r,r,r,B.a_,r,r,r)}}
+return A.E(r,A.X(A.b([B.a_h,B.t,o,B.K,A.i("\u5f9e\u300c\u6355\u6349\u300d\u5efa\u7acb\u9304\u97f3\u3001\u63d0\u9192\u6216\u7522\u54c1\u60f3\u6cd5\uff0c\u4e4b\u5f8c\u518d\u6574\u7406\u6210\u5f85\u8fa6\u3002",r,r,r,s==null?r:s.h_(B.o,1.45),B.aa,r,r),B.w,new A.d6("\u65b0\u589e\u8a18\u9304",this.c,!1,B.hO,r)],t.p),B.k,r,B.c,B.f),B.h,r,r,new A.I(B.i,r,p,q,B.nH,r,B.l),r,r,r,r,B.a_,r,r,r)}}
 A.a6t.prototype={
 m(a){var s,r=null,q=A.f(a).ok.r
 q=q==null?r:q.dT(B.ag)
