@@ -19,6 +19,7 @@
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="MOZTECH 智慧產品生命週期與品牌服務 App。">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
@@ -33,16 +34,28 @@
   <link rel="manifest" href="manifest.json">
   <!-- Google model-viewer for flutter_3d_controller Web rendering -->
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+  <script>
+    // GitHub Pages preview is served as a static demo. Clear old Flutter PWA
+    // workers so preview visitors do not get a stale white screen.
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations()
+        .then((registrations) => registrations.forEach((worker) => worker.unregister()));
+    }
+    if ('caches' in window) {
+      caches.keys()
+        .then((keys) => keys.forEach((key) => caches.delete(key)));
+    }
+  </script>
 </head>
 <body>
   <!--
-    You can customize the "flutter_bootstrap.js?v=202606030456" script.
+    You can customize the "flutter_bootstrap.js?v=202606030500" script.
     This is useful to provide a custom configuration to the Flutter loader
     or to give the user feedback during the initialization process.
 
     For more details:
     * https://docs.flutter.dev/platform-integration/web/initialization
   -->
-  <script src="flutter_bootstrap.js?v=202606030456" async></script>
+  <script src="flutter_bootstrap.js?v=202606030500" async></script>
 </body>
 </html>
