@@ -101943,7 +101943,7 @@ axz(a,b){var s=0,r=A.M(t.P2),q,p,o,n,m
 var $async$LU=A.N(function(c,d){if(c===1)return A.J(d,r)
 for(;;)switch(s){case 0:p=Date.now()
 o=B.cQ.k7(99)
-n=b.length===0?"\u7522\u54c1\u958b\u767c\u6703\u8b70":b
+n=b.length===0?"\u8a9e\u97f3\u8a18\u9304":b
 m=A.aXB(B.uv,new A.cm(Date.now(),0,!1),"note_"+1000*p+"_"+o,"\u672c\u6b21\u6703\u8b70\u78ba\u8a8d MOZTECH App \u5b9a\u4f4d\u70ba\u6703\u54e1\u4fdd\u56fa\u4e2d\u5fc3\u3001\u667a\u6167\u96fb\u6e90\u4e2d\u5fc3\u8207 AI \u670d\u52d9\u5165\u53e3\u3002\u73fe\u968e\u6bb5\u4ee5\u7522\u54c1\u767b\u9304\u3001\u4fdd\u56fa\u3001\u5b89\u5168\u5206\u6578\u8207 AI Note \u70ba\u6838\u5fc3\u3002",B.WB,n,"\u4eca\u5929\u8a0e\u8ad6 MOZTECH App \u7522\u54c1\u670d\u52d9\u6d41\u7a0b\uff0c\u5305\u542b\u6703\u54e1\u767b\u5165\u3001\u7522\u54c1\u767b\u9304\u3001\u4fdd\u56fa\u67e5\u8a62\u3001\u96fb\u6c60\u5b89\u5168\u5206\u6578\u3001NFC \u611f\u61c9\u8207 AI \u6703\u8b70\u8a18\u8981\u3002",a)
 B.b.kP($.aT2(),0,m)
 q=m
@@ -102099,7 +102099,7 @@ this.bi()
 this.cB()}}
 A.DB.prototype={
 V(){var s=$.at()
-return new A.KN(new A.eT(new A.cO("\u7522\u54c1\u958b\u767c\u6703\u8b70",B.db,B.be),s),new A.aps(new A.G_()),new A.nF(A.aS(t.pf)))}}
+return new A.KN(new A.eT(new A.cO("\u8a9e\u97f3\u8a18\u9304",B.db,B.be),s),new A.aps(new A.G_()),new A.nF(A.aS(t.pf)))}}
 A.KN.prototype={
 l(){var s=this.d
 s.P$=$.at()
