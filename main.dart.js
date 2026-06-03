@@ -106588,31 +106588,29 @@ s=A.bn(s==null?B.ka:s,q,q,q)}return A.bk(A.xa(s,A.h(p?"\u8655\u7406\u4e2d...":r.
 A.Uy.prototype={
 m(a){return A.bh_("assets/products/mp003_fan_power_large.glb",!1)}}
 A.aQO.prototype={
-$1(a){var s,r=v.G.document.createElement("model-viewer")
-r.setAttribute("src",this.a)
-r.setAttribute("alt","MOZTECH \u592a\u7a7a\u6247\u884c\u52d5\u96fb\u6e90 3D \u6a21\u578b")
-r.setAttribute("camera-orbit","18deg 72deg 0.92m")
-r.setAttribute("field-of-view","18deg")
-r.setAttribute("min-camera-orbit","auto auto 0.72m")
-r.setAttribute("max-camera-orbit","auto auto 2.2m")
-r.setAttribute("interaction-prompt","none")
-r.setAttribute("disable-zoom","")
-r.setAttribute("auto-rotate","")
-r.setAttribute("auto-rotate-delay","1200")
-r.setAttribute("rotation-per-second","6deg")
-r.setAttribute("environment-image","neutral")
-r.setAttribute("exposure","1.08")
-r.setAttribute("shadow-intensity","0.28")
-r.setAttribute("shadow-softness","0.84")
-r.style.width="100%"
-r.style.height="100%"
-r.style.display="block"
-r.style.background="transparent"
-r.style.pointerEvents="none"
-s=r.style
-s.transform="scale(1.22)"
-r.style.transformOrigin="50% 50%"
-return r},
+$1(a){var s=v.G.document.createElement("model-viewer")
+s.setAttribute("src",this.a)
+s.setAttribute("poster","assets/assets/products/mp003.png")
+s.setAttribute("alt","MOZTECH \u592a\u7a7a\u6247\u884c\u52d5\u96fb\u6e90 3D \u6a21\u578b")
+s.setAttribute("camera-orbit","24deg 70deg 1.34m")
+s.setAttribute("field-of-view","24deg")
+s.setAttribute("min-camera-orbit","auto auto 1.2m")
+s.setAttribute("max-camera-orbit","auto auto 2.8m")
+s.setAttribute("interaction-prompt","none")
+s.setAttribute("disable-zoom","")
+s.setAttribute("auto-rotate","")
+s.setAttribute("auto-rotate-delay","1200")
+s.setAttribute("rotation-per-second","1deg")
+s.setAttribute("environment-image","neutral")
+s.setAttribute("exposure","1.0")
+s.setAttribute("shadow-intensity","0.34")
+s.setAttribute("shadow-softness","0.84")
+s.style.width="100%"
+s.style.height="100%"
+s.style.display="block"
+s.style.background="transparent"
+s.style.pointerEvents="none"
+return s},
 $S:667}
 A.FG.prototype={
 m(a){var s,r,q=null,p=this.c,o=p?118:188,n=p?148:236,m=!p,l=p?1.34:1.46,k=p?2:5,j=A.pS(0,A.fQ(q,new A.E(q,q,q,q,q,new A.hm(B.B,0.5,B.az,q,0,A.b([B.i.S(p?0.13:0.16),B.i.S(0.04),B.y],t.O),B.YD,q),B.a9),B.bd)),i=p?1:2
