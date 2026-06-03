@@ -1,1 +1,11 @@
-{"app_name":"moztech_app","version":"202606040231","build_number":"202606040231","package_name":"moztech_app","built_at":"2026-06-03T18:31:52Z","product_model":"MP003","product_name":"太空扇行動電源","ui_pass":"restore_antigravity_premium_home_products_slice","product_visual":"high_resolution_mp003_product_stage_glb_asset_reserved"}
+{
+  "app_name": "moztech_app",
+  "version": "202606040315",
+  "build_number": "202606040315",
+  "package_name": "moztech_app",
+  "built_at": "2026-06-03T19:08:12.474967+00:00",
+  "ui_pass": "mp003_glb_product_stage",
+  "product_stage": "uses uploaded 59MB GLB with tuned model-viewer camera",
+  "support": "search_first_ai_troubleshooting_lab_route_fixed",
+  "capture": "animated_action_sheet"
+}
