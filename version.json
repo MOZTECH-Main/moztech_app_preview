@@ -1,11 +1,12 @@
 {
   "app_name": "moztech_app",
-  "version": "202606040335",
-  "build_number": "202606040335",
+  "version": "202606040355",
+  "build_number": "202606040355",
   "package_name": "moztech_app",
-  "built_at": "2026-06-03T19:24:10.023483+00:00",
-  "ui_pass": "me_membership_service_polish",
-  "me": "member score progress benefits and check-in polished",
+  "built_at": "2026-06-03T20:14:15.074962+00:00",
+  "ui_pass": "product_passport_lifecycle_summary",
+  "product_passport": "adds lifecycle service summary below identity hero",
+  "me": "member service center retained",
   "product_stage": "MP003 GLB product stage retained",
   "support": "search-first support retained",
   "capture": "animated capture sheet retained"
