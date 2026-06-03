@@ -1,14 +1,13 @@
 {
   "app_name": "moztech_app",
-  "version": "202606040537",
-  "build_number": "202606040537",
+  "version": "202606040632",
+  "build_number": "202606040632",
   "package_name": "moztech_app",
-  "built_at": "2026-06-03T21:39:45.691555+00:00",
-  "ui_pass": "manual_popular_questions",
-  "product_manual": "adds popular question shortcuts and support entry",
+  "built_at": "2026-06-03T22:33:19.328580+00:00",
+  "ui_pass": "manual_article_support_context",
+  "manual_article": "knowledge article layout with takeaways, next steps and related articles",
+  "support": "adds active product context before AI triage",
+  "product_manual": "popular question shortcuts retained",
   "product_passport": "lifecycle service summary retained",
-  "me": "member service center retained",
-  "product_stage": "MP003 GLB product stage retained",
-  "support": "search-first support retained",
-  "capture": "animated capture sheet retained"
+  "product_stage": "MP003 GLB product stage retained"
 }
