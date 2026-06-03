@@ -100583,6 +100583,7 @@ X(){var s=$.ao()
 return new A.Lz(new A.bi(null,t.am),new A.ez(new A.cA("kevin@moztech.com",B.cY,B.bb),s),new A.ez(new A.cA("password123",B.cY,B.bb),s),new A.Ui(),new A.nk(A.aO(t.pf)))}}
 A.Lz.prototype={
 ae(){this.av()
+this.a.toString
 $.ad.ok$.push(new A.aGA(this))},
 l(){var s=this.e,r=$.ao()
 s.R$=r
@@ -100702,7 +100703,7 @@ m(a){var s,r=this,q=null,p=t.p,o=A.a0(A.b([A.jg(B.ady,r.x,q),B.bO,A.jg(B.adN,r.y
 m=A.bp(A.SC(n?B.a0v:B.adR,m,l),58,1/0)
 l=A.aa(A.z(q,q,B.h,B.u,q,q,q,1,q,q,q,q,q,q),1)
 s=A.f(a).ok.ax
-return new A.ae(B.bC,A.S(A.b([B.x,B.a0u,B.ba,new A.O7(r.c,"\u96fb\u5b50\u4fe1\u7bb1",q,B.l7,!1,new A.aGi(),q),B.q,new A.O7(r.d,"\u5bc6\u78bc",B.St,q,!0,new A.aGj(),q),B.Fl,o,B.w,m,B.x,A.a0(A.b([l,new A.ae(B.c8,A.h("OR",q,q,q,s==null?q:s.aO(B.b1,B.a0),q,q,q),q),A.aa(A.z(q,q,B.h,B.u,q,q,q,1,q,q,q,q,q,q),1)],p),B.k,B.c,B.d,0),B.x,A.a0(A.b([new A.Bj("LINE","assets/social/line.svg",new A.aGk(r),q),B.Fj,new A.Bj("Gmail","assets/social/gmail.svg",new A.aGl(r),q),B.Fj,new A.Bj("Apple","assets/social/apple.svg",new A.aGm(r),q)],p),B.k,B.cp,B.d,0),B.ba,new A.a8I(r.f,r.r,q)],p),B.n,q,B.c,B.d),q)}}
+return new A.ae(B.bC,A.S(A.b([B.x,B.a0u,B.ba,new A.O7(r.c,"\u96fb\u5b50\u4fe1\u7bb1",q,B.l7,!1,new A.aGi(),q),B.q,new A.O7(r.d,"\u5bc6\u78bc",B.St,q,!0,new A.aGj(),q),B.Fl,o,B.w,m,B.x,A.a0(A.b([l,new A.ae(B.c8,A.h("\u6216",q,q,q,s==null?q:s.aO(B.b1,B.a0),q,q,q),q),A.aa(A.z(q,q,B.h,B.u,q,q,q,1,q,q,q,q,q,q),1)],p),B.k,B.c,B.d,0),B.x,A.a0(A.b([new A.Bj("LINE","assets/social/line.svg",new A.aGk(r),q),B.Fj,new A.Bj("Gmail","assets/social/gmail.svg",new A.aGl(r),q),B.Fj,new A.Bj("Apple","assets/social/apple.svg",new A.aGm(r),q)],p),B.k,B.cp,B.d,0),B.ba,new A.a8I(r.f,r.r,q)],p),B.n,q,B.c,B.d),q)}}
 A.aGi.prototype={
 $1(a){return a!=null&&B.e.p(a,"@")?null:"\u8acb\u8f38\u5165\u6b63\u78ba Email"},
 $S:37}
@@ -100721,7 +100722,7 @@ $0(){return this.a.z.$1("Apple")},
 $S:0}
 A.a9h.prototype={
 m(a){var s=null,r=A.jg(B.adu,this.c,A.z2(B.dN,s,s,s,s,s,s,s,s,s,s,B.a6P,B.X,s,s,s,s,s,s,s)),q=A.B(999),p=A.af(B.u,1),o=A.f(a).ok.ax,n=t.p
-return A.bp(A.a0(A.b([r,B.bO,A.z(s,A.a0(A.b([B.Sr,B.ct,A.h("Taiwan",s,s,s,o==null?s:o.aO(B.i,B.aI),s,s,s)],n),B.k,B.c,B.d,0),B.h,s,s,new A.E(B.O,s,p,q,s,s,B.l),s,s,s,s,B.mJ,s,s,s)],n),B.k,B.c,B.d,0),46,s)}}
+return A.bp(A.a0(A.b([r,B.bO,A.z(s,A.a0(A.b([B.Sr,B.ct,A.h("\u81fa\u7063",s,s,s,o==null?s:o.aO(B.i,B.aI),s,s,s)],n),B.k,B.c,B.d,0),B.h,s,s,new A.E(B.O,s,p,q,s,s,B.l),s,s,s,s,B.mJ,s,s,s)],n),B.k,B.c,B.d,0),46,s)}}
 A.O7.prototype={
 m(a){var s=this,r=null,q=A.f(a).ok.w
 q=q==null?r:q.pH(18)
@@ -101005,6 +101006,7 @@ r=t.Ni
 s=A.bK(B.Up,s,o)
 p.r!==$&&A.aR()
 p.r=new A.ap(s,new A.aw(B.a27,B.r,r),r.h("ap<at.T>"))
+p.a.toString
 A.hc(B.P4,new A.aN5(p),t.H)},
 apV(){var s=B.e.ds(A.bct().gmI())
 if(s.length===0||s==="/")return"/login"
