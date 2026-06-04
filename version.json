@@ -1,5 +1,6 @@
 {
-  "version": "202606050130",
-  "source_commit": "fa43200",
-  "ui_pass": "product_passport_registered_state"
+  "version": "202606050151",
+  "source_commit": "0d659b5",
+  "ui_pass": "product_passport_service_tabs",
+  "updated_at": "2026-06-04T17:51:27Z"
 }
