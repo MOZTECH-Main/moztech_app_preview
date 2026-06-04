@@ -1,9 +1,5 @@
 {
-  "app_name": "moztech_app",
-  "version": "202606040944",
-  "build_number": "202606040944",
-  "package_name": "moztech_app",
-  "built_at": "2026-06-04T09:44:20Z",
-  "ui_pass": "support_path_refinement",
-  "notes": "Support now surfaces the recommended path directly under search while preserving product context, AI triage, repair, and manual entry points."
+  "version": "202606041223",
+  "source_commit": "5a94097",
+  "ui_pass": "me_account_center_refinement"
 }
