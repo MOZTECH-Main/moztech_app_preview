@@ -1,9 +1,9 @@
 {
   "app_name": "moztech_app",
-  "version": "202606041647",
-  "build_number": "202606041647",
+  "version": "202606040907",
+  "build_number": "202606040907",
   "package_name": "moztech_app",
-  "built_at": "2026-06-04T08:48:28.562496+00:00",
-  "ui_pass": "capture_sheet_refinement",
-  "notes": "Capture bottom sheet now shows connected product context, refined primary capture actions, and compact product actions."
+  "built_at": "2026-06-04T09:08:13Z",
+  "ui_pass": "today_member_service_refinement",
+  "notes": "Today now restores lightweight member points and service context, clarifies safety score copy, and keeps the product stage as the main focus."
 }
