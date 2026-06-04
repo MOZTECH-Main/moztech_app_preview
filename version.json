@@ -1,8 +1,5 @@
 {
-  "app_name": "moztech_app",
-  "version": "202606050613",
-  "build_number": "202606050613",
-  "package_name": "moztech_app",
-  "ui_pass": "splash_onboarding_brand_entry",
-  "source_commit": "7b61693"
+  "version": "202606050643",
+  "sourceCommit": "fcd44b0",
+  "description": "Refined product-first Today experience and Product Passport 3D stage"
 }
