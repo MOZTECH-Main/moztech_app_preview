@@ -1,9 +1,9 @@
 {
   "app_name": "moztech_app",
-  "version": "202606040925",
-  "build_number": "202606040925",
+  "version": "202606040944",
+  "build_number": "202606040944",
   "package_name": "moztech_app",
-  "built_at": "2026-06-04T09:26:00Z",
-  "ui_pass": "products_passport_refinement",
-  "notes": "Products now emphasizes synchronized product passports and service entry points; Product Passport safety score copy is clearer."
+  "built_at": "2026-06-04T09:44:20Z",
+  "ui_pass": "support_path_refinement",
+  "notes": "Support now surfaces the recommended path directly under search while preserving product context, AI triage, repair, and manual entry points."
 }
