@@ -1,5 +1,5 @@
 {
-  "version": "202606050105",
-  "source_commit": "dff0195",
-  "ui_pass": "registration_completion_flow"
+  "version": "202606050130",
+  "source_commit": "fa43200",
+  "ui_pass": "product_passport_registered_state"
 }
