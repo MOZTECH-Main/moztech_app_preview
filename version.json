@@ -1,5 +1,5 @@
 {
-  "version": "202606042313",
-  "source_commit": "14c8f0c",
-  "ui_pass": "capture_quick_action_sheet_cache_fix"
+  "version": "202606042356",
+  "source_commit": "de97104",
+  "ui_pass": "capture_recording_mock_flow"
 }
