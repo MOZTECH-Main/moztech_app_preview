@@ -3,7 +3,7 @@
     "short_name": "MOZTECH",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#FFFFFF",
+    "background_color": "#2BB9ED",
     "theme_color": "#2BB9ED",
     "description": "MOZTECH 智慧產品生命週期與品牌服務 App。",
     "orientation": "portrait-primary",
