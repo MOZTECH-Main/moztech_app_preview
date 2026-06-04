@@ -1,9 +1,9 @@
 {
   "app_name": "moztech_app",
-  "version": "202606040907",
-  "build_number": "202606040907",
+  "version": "202606040925",
+  "build_number": "202606040925",
   "package_name": "moztech_app",
-  "built_at": "2026-06-04T09:08:13Z",
-  "ui_pass": "today_member_service_refinement",
-  "notes": "Today now restores lightweight member points and service context, clarifies safety score copy, and keeps the product stage as the main focus."
+  "built_at": "2026-06-04T09:26:00Z",
+  "ui_pass": "products_passport_refinement",
+  "notes": "Products now emphasizes synchronized product passports and service entry points; Product Passport safety score copy is clearer."
 }
