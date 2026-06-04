@@ -1,6 +1,6 @@
 {
-  "version": "202606050151",
-  "source_commit": "0d659b5",
-  "ui_pass": "product_passport_service_tabs",
-  "updated_at": "2026-06-04T17:51:27Z"
+  "version": "202606050206",
+  "source_commit": "2ebac6f",
+  "ui_pass": "product_manual_service_journey",
+  "updated_at": "2026-06-04T18:06:20Z"
 }
