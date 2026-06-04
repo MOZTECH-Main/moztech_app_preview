@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "build_number": "1",
   "package_name": "moztech_app",
-  "preview_version": "202606050514",
-  "ui_pass": "my_page_service_hierarchy",
-  "source_commit": "d41938e"
+  "preview_version": "202606050538",
+  "ui_pass": "login_notification_permission_flow",
+  "source_commit": "9233ebe"
 }
