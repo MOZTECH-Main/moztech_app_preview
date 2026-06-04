@@ -34,15 +34,11 @@
   <link rel="manifest" href="manifest.json">
   <script type="module" src="https://unpkg.com/@google/model-viewer@4.1.0/dist/model-viewer.min.js"></script>
   <script>
-    // GitHub Pages preview is served as a static demo. Clear old Flutter PWA
-    // workers so preview visitors do not get a stale white screen.
+    // GitHub Pages preview is served as a static demo. Remove old Flutter PWA
+    // workers so preview visitors do not stay on a stale build.
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.getRegistrations()
         .then((registrations) => registrations.forEach((worker) => worker.unregister()));
-    }
-    if ('caches' in window) {
-      caches.keys()
-        .then((keys) => keys.forEach((key) => caches.delete(key)));
     }
   </script>
 </head>
