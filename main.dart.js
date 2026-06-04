@@ -107302,9 +107302,9 @@ $1(a){var s,r=v.G.document.createElement("model-viewer")
 r.setAttribute("src",this.a)
 r.setAttribute("poster","assets/assets/products/mp003.png")
 r.setAttribute("alt","MOZTECH \u592a\u7a7a\u6247\u884c\u52d5\u96fb\u6e90 3D \u6a21\u578b")
-r.setAttribute("camera-orbit","38deg 68deg 88%")
-r.setAttribute("field-of-view","23deg")
-r.setAttribute("min-camera-orbit","auto auto 74%")
+r.setAttribute("camera-orbit","38deg 68deg 105%")
+r.setAttribute("field-of-view","24deg")
+r.setAttribute("min-camera-orbit","auto auto 88%")
 r.setAttribute("max-camera-orbit","auto auto 150%")
 r.setAttribute("interaction-prompt","none")
 r.setAttribute("disable-zoom","")
@@ -107312,9 +107312,9 @@ r.setAttribute("auto-rotate","")
 r.setAttribute("auto-rotate-delay","1200")
 r.setAttribute("rotation-per-second","1deg")
 r.setAttribute("environment-image","neutral")
-r.setAttribute("exposure","1.18")
-r.setAttribute("shadow-intensity","0.14")
-r.setAttribute("shadow-softness","0.92")
+r.setAttribute("exposure","0.94")
+r.setAttribute("shadow-intensity","0.22")
+r.setAttribute("shadow-softness","0.86")
 r.style.width="100%"
 r.style.height="100%"
 r.style.display="block"
@@ -107322,16 +107322,16 @@ r.style.background="transparent"
 r.style.pointerEvents="none"
 r.style.setProperty("--poster-color","transparent")
 s=r.style
-s.transform="translateY(10px)"
+s.transform="translateY(2px) scale(1.0)"
 r.style.transformOrigin="center center"
 return r},
 $S:668}
 A.xS.prototype={
 m(a){var s,r,q,p,o,n,m,l,k=null,j=this.e&&!this.c,i=this.c
 if(i)s=118
-else s=j?214:188
+else s=j?236:188
 if(i)r=148
-else r=j?270:236
+else r=j?296:236
 if(j)q=1
 else q=i?1.34:1.28
 if(i)p=2
@@ -107386,7 +107386,7 @@ l(){var s=this.d
 s===$&&A.b()
 s.l()
 this.abs()},
-m(a){var s,r=this,q=r.a,p=q.f?0.64:0.94,o=r.e
+m(a){var s,r=this,q=r.a,p=q.f?0.66:1,o=r.e
 q=q.c
 s=r.d
 s===$&&A.b()
@@ -107407,9 +107407,9 @@ p=p.f
 o=A.a([l,A.kW(A.bk(new A.xS(p,!p,m),o*1.28,o),new A.i(0,q))],t.p)
 l=s.a
 p=l.c
-o.push(A.dB(m,new A.a8S(B.kn,""+l.d+"%",m),m,m,m,p*0.04,p*0.08,m))
+o.push(A.dB(m,new A.a8S(B.kn,""+l.d+"%",m),m,m,m,p*0,p*0.1,m))
 l=s.a
-o.push(A.dB(l.c*0.1,new A.a8U(l.e,m),m,m,m,m,m,m))
+o.push(A.dB(l.c*0.04,new A.a8U(l.e,m),m,m,m,m,m,m))
 return A.cs(B.F,o,B.f,B.ah,m)},
 $S:135}
 A.a8S.prototype={
@@ -107421,38 +107421,38 @@ m(a){var s=null,r=B.j.N(0.92),q=A.p(999),p=A.ad(B.i.N(0.16),1),o=A.e(a).ok.ax
 o=o==null?s:o.aA(B.G,B.T)
 return A.q(s,A.Z(A.a([B.a85,B.j_,A.h(this.c,s,s,s,o,s,s,s)],t.p),B.k,B.c,B.a9,0),B.f,s,s,new A.v(r,s,p,q,s,s,B.l),s,s,s,s,B.Qj,s,s,s)}}
 A.a4c.prototype={
-aw(a,a0){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=a0.a/2,d=a0.b/2,c=new A.i(e,d),b=a0.gdc()*0.38
+aw(a,a0){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=a0.a/2,d=a0.b/2,c=new A.i(e,d),b=a0.gdc()*0.34
 $.a4()
 s=A.al()
 r=t.O
 q=b*1.55
-s.sf4(new A.hn(B.F,0.5,B.aw,null,0,A.a([B.i.N(0.14),B.i.N(0.04),B.y],r),B.Zt,null).hV(A.dq(c,q)))
+s.sf4(new A.hn(B.F,0.5,B.aw,null,0,A.a([B.i.N(0.1),B.i.N(0.04),B.y],r),B.Zt,null).hV(A.dq(c,q)))
 a.ce(c,q,s)
 p=A.dq(c,b)
 q=A.al()
 q.b=B.ab
 q.c=1
-q.r=B.u.gn()
+q.r=B.u.N(0.72).gn()
 a.ce(c,b,q)
 o=A.al()
 o.b=B.ab
 o.d=B.bh
-o.c=4
+o.c=3
 q=this.b*3.141592653589793*2
-o.sf4(new A.mf(B.F,0,6.283185307179586,B.aw,A.a([B.i.N(0.08),B.i.N(0.88),B.i.N(0.18),B.i.N(0.08)],r),null,new A.xi(q)).hV(p))
+o.sf4(new A.mf(B.F,0,6.283185307179586,B.aw,A.a([B.i.N(0.03),B.i.N(0.54),B.i.N(0.12),B.i.N(0.03)],r),null,new A.xi(q)).hV(p))
 a.ht(p,-1.5707963267948966+q,4.241150082346221,!1,o)
 n=A.al()
 n.b=B.ab
 n.c=1
-n.r=B.i.N(0.12).gn()
+n.r=B.i.N(0.08).gn()
 a.ce(c,b*0.72,n)
 for(r=a.a,m=0;m<3;++m){l=q+m*3.141592653589793*0.72
 k=Math.cos(l)
 j=Math.sin(l)
 i=m===0
-h=i?4.4:3
+h=i?3.6:2.4
 g=new A.fR(B.bm,B.be,B.c5,B.ck,B.bB)
-g.r=B.i.N(i?0.9:0.35).gn()
+g.r=B.i.N(i?0.7:0.24).gn()
 f=g.cD()
 r.drawCircle(e+k*b,d+j*b,h,f)
 f.delete()}},

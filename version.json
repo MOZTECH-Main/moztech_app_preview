@@ -1,13 +1,9 @@
 {
   "app_name": "moztech_app",
-  "version": "202606040712",
-  "build_number": "202606040712",
+  "version": "202606041624",
+  "build_number": "202606041624",
   "package_name": "moztech_app",
-  "built_at": "2026-06-03T23:20:17.761552+00:00",
-  "ui_pass": "ai_support_product_context",
-  "ai_support": "product-context AI troubleshooting with actionable next steps",
-  "support_conversation": "visual audit coverage retained for product-context handoff",
-  "manual_article": "knowledge article flow retained",
-  "support": "active product support context retained",
-  "product_stage": "MP003 GLB product stage retained"
+  "built_at": "2026-06-04T08:24:42.682523+00:00",
+  "ui_pass": "mp003_glb_stage_fit",
+  "notes": "MP003 GLB viewer uses updated camera framing, exposure, and softer product-stage animation."
 }
