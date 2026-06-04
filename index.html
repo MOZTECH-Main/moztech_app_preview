@@ -41,6 +41,34 @@
       overflow: hidden;
       background: linear-gradient(180deg, #42C8F4 0%, #2BB9ED 55%, #11A7DC 100%);
     }
+
+    #moz-preloader {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      pointer-events: none;
+      color: rgba(255, 255, 255, 0.88);
+      font-family: Poppins, "Noto Sans TC", sans-serif;
+      letter-spacing: 0;
+    }
+
+    #moz-preloader img {
+      width: min(58vw, 240px);
+      max-height: 76px;
+      filter: brightness(0) invert(1);
+      opacity: 0.88;
+    }
+
+    #moz-preloader span {
+      font-size: 16px;
+      font-weight: 700;
+      opacity: 0.78;
+    }
   </style>
   <script type="module" src="https://unpkg.com/@google/model-viewer@4.1.0/dist/model-viewer.min.js"></script>
   <script>
@@ -53,6 +81,18 @@
   </script>
 </head>
 <body>
+  <div id="moz-preloader" aria-label="MOZTECH 載入中">
+    <img src="assets/logos/moztech_wordmark_equal_padding.svg" alt="MOZTECH">
+    <span>產品照護從這裡開始</span>
+  </div>
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      document.getElementById('moz-preloader')?.remove();
+    });
+    window.setTimeout(function () {
+      document.getElementById('moz-preloader')?.remove();
+    }, 6000);
+  </script>
   <!--
     You can customize the "flutter_bootstrap.js" script.
     This is useful to provide a custom configuration to the Flutter loader

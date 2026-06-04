@@ -1,8 +1,8 @@
 {
   "app_name": "moztech_app",
-  "version": "202606050608",
-  "build_number": "202606050608",
+  "version": "202606050613",
+  "build_number": "202606050613",
   "package_name": "moztech_app",
   "ui_pass": "splash_onboarding_brand_entry",
-  "source_commit": "cad76b9"
+  "source_commit": "7b61693"
 }
