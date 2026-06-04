@@ -1,9 +1,9 @@
 {
   "app_name": "moztech_app",
-  "version": "202606041624",
-  "build_number": "202606041624",
+  "version": "202606041647",
+  "build_number": "202606041647",
   "package_name": "moztech_app",
-  "built_at": "2026-06-04T08:24:42.682523+00:00",
-  "ui_pass": "mp003_glb_stage_fit",
-  "notes": "MP003 GLB viewer uses updated camera framing, exposure, and softer product-stage animation."
+  "built_at": "2026-06-04T08:48:28.562496+00:00",
+  "ui_pass": "capture_sheet_refinement",
+  "notes": "Capture bottom sheet now shows connected product context, refined primary capture actions, and compact product actions."
 }
