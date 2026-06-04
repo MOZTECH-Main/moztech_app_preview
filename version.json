@@ -1,6 +1,9 @@
 {
-  "version": "202606050251",
-  "source_commit": "4b24f34",
-  "ui_pass": "my_page_service_summary",
-  "updated_at": "2026-06-04T18:51:43Z"
+  "app_name": "moztech_app",
+  "version": "0.1.0",
+  "build_number": "1",
+  "package_name": "moztech_app",
+  "preview_version": "202606050313",
+  "ui_pass": "today_home_readiness_flow",
+  "source_commit": "900b96f"
 }
