@@ -1,5 +1,5 @@
 {
-  "version": "202606050038",
-  "source_commit": "82433a4",
-  "ui_pass": "product_scan_mock_flow"
+  "version": "202606050105",
+  "source_commit": "dff0195",
+  "ui_pass": "registration_completion_flow"
 }
