@@ -1,6 +1,6 @@
 {
-  "version": "202606050543",
-  "sourceCommit": "f312c379999b32867a49d75047c4b2f3265e6f7a",
-  "deployedAt": "2026-06-05T05:43:24Z",
-  "note": "Product passport 3D stage fallback"
+  "version": "202606050602",
+  "sourceCommit": "8f7ccc96c58a7f72fab033498717d5f50d735e56",
+  "deployedAt": "2026-06-05T06:02:36Z",
+  "note": "Main tab bottom safe spacing refinement"
 }
