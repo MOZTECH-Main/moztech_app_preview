@@ -1,6 +1,1 @@
-{
-  "version": "202606051741",
-  "sourceCommit": "37f0d0f",
-  "deployedAt": "2026-06-05T17:41:00+08:00",
-  "note": "Fixed MOZTECH splash logo SVG rendering and cleaned preview build output."
-}
+{"version":"202606051825-products-hub-svg","builtAt":"2026-06-05T10:29:27Z","source":"codex-products-hub-svg"}
