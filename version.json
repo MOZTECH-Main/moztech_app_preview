@@ -1,6 +1,6 @@
 {
-  "version": "202606051152",
-  "sourceCommit": "b96cd4756f35fef332956463d6fe39c8aaa3ec66",
-  "deployedAt": "2026-06-05T03:52:46Z",
-  "note": "Login privacy flow and mobile dialog safe width"
+  "version": "202606051224",
+  "sourceCommit": "c5ec25fa1c1bfecf4417a9f4eeefc33426602462",
+  "deployedAt": "2026-06-05T04:24:03Z",
+  "note": "Today capture card and product-first wording refinement"
 }
