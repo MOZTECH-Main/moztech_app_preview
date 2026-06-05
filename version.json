@@ -1,6 +1,6 @@
 {
-  "version": "202606051328",
-  "sourceCommit": "198653bbc79b964874907cbc4736b8cb0580b4fb",
-  "deployedAt": "2026-06-05T05:28:34Z",
-  "note": "AI support hub quick prompts refinement"
+  "version": "202606050543",
+  "sourceCommit": "f312c379999b32867a49d75047c4b2f3265e6f7a",
+  "deployedAt": "2026-06-05T05:43:24Z",
+  "note": "Product passport 3D stage fallback"
 }

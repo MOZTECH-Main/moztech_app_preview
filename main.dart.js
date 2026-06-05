@@ -31562,7 +31562,7 @@ r=$.b65
 $.b65=r+1
 q="moztech-model-viewer-"+r
 $.b98()
-$.wb().OH(q,new A.aUX(s,!1),!0)
+$.wb().OH(q,new A.aUX(!1,s),!0)
 return A.bd9(null,B.p_,q)},
 aUX:function aUX(a,b){this.a=a
 this.b=b},
@@ -31571,7 +31571,7 @@ _.c=a
 _.e=b
 _.f=c
 _.a=d},
-aXu(a,b,c,d,e,f){return new A.tV(d,b,e,!1,!0,!1,null)},
+aXu(a,b,c,d,e,f){return new A.tV(d,b,e,!1,!0,f,null)},
 tV:function tV(a,b,c,d,e,f,g){var _=this
 _.c=a
 _.d=b
@@ -106004,7 +106004,7 @@ l=t.p
 m=A.F(A.a([new A.f_("\u6b63\u54c1\u5df2\u9a57\u8b49",B.e,h),B.aV,new A.f_(n,m,h),B.bM,A.Z6(B.Ul,B.ah3,i.f,h)],l),B.k,B.c,B.d,0)
 if(e)n=g
 else{c.toString
-n=c>=85?"\u7522\u54c1\u72c0\u614b\u826f\u597d":"\u5efa\u8b70\u6aa2\u67e5\u5b89\u5168"}n=A.aXu(!0,b,!1,224,n,!1)
+n=c>=85?"\u7522\u54c1\u72c0\u614b\u826f\u597d":"\u5efa\u8b70\u6aa2\u67e5\u5b89\u5168"}n=A.aXu(!0,b,!1,224,n,!0)
 k=A.d(a1).ok.a
 k=A.f(p,2,B.w,h,k==null?h:k.j2(28,B.a6,1.05),B.a4,h,h)
 j=A.d(a1).ok.z
@@ -109090,35 +109090,58 @@ s=A.aD(s==null?B.fM:s,q,q,q)}return A.ba(A.xi(s,A.f(p?"\u8655\u7406\u4e2d...":r.
 A.Vl.prototype={
 m(a){return A.blh("assets/products/mp003_fan_power_large.glb",!1)}}
 A.aUX.prototype={
-$1(a){var s,r=v.G.document.createElement("model-viewer")
-r.setAttribute("src",this.a)
-r.setAttribute("poster","assets/assets/products/mp003.png")
-r.setAttribute("alt","MOZTECH \u592a\u7a7a\u6247\u884c\u52d5\u96fb\u6e90 3D \u6a21\u578b")
-r.setAttribute("camera-orbit","38deg 68deg 118%")
-r.setAttribute("field-of-view","24deg")
-r.setAttribute("min-camera-orbit","auto auto 104%")
-r.setAttribute("max-camera-orbit","auto auto 168%")
-r.setAttribute("interaction-prompt","none")
-r.setAttribute("disable-zoom","")
-r.setAttribute("auto-rotate","")
-r.setAttribute("auto-rotate-delay","1200")
-r.setAttribute("rotation-per-second","1deg")
-r.setAttribute("environment-image","neutral")
-r.setAttribute("exposure","0.94")
-r.setAttribute("shadow-intensity","0.22")
-r.setAttribute("shadow-softness","0.86")
-r.style.width="100%"
-r.style.height="100%"
-r.style.display="block"
-r.style.background="transparent"
-r.style.pointerEvents="none"
-r.style.setProperty("--poster-color","transparent")
-r.style.setProperty("--progress-bar-color","transparent")
-r.style.setProperty("--progress-bar-height","0px")
-s=r.style
-s.transform="translateY(1px) scale(0.96)"
-r.style.transformOrigin="center center"
-return r},
+$1(a){var s,r,q,p=v.G,o=p.document.createElement("div")
+o.style.width="100%"
+o.style.height="100%"
+o.style.position="relative"
+o.style.overflow="hidden"
+o.style.background="transparent"
+s=p.document.createElement("img")
+s.setAttribute("src","assets/assets/products/mp003.png")
+s.setAttribute("alt","MOZTECH \u592a\u7a7a\u6247\u884c\u52d5\u96fb\u6e90\u7522\u54c1\u5716")
+s.style.position="absolute"
+s.style.inset="0"
+s.style.width="100%"
+s.style.height="100%"
+s.style.objectFit="contain"
+r=s.style
+r.transform="translateY(1px) scale(0.96)"
+s.style.transformOrigin="center center"
+s.style.pointerEvents="none"
+s.style.transition="opacity 280ms ease"
+q=p.document.createElement("model-viewer")
+q.setAttribute("src",this.b)
+q.setAttribute("poster","assets/assets/products/mp003.png")
+q.setAttribute("alt","MOZTECH \u592a\u7a7a\u6247\u884c\u52d5\u96fb\u6e90 3D \u6a21\u578b")
+q.setAttribute("camera-orbit","38deg 68deg 118%")
+q.setAttribute("field-of-view","24deg")
+q.setAttribute("min-camera-orbit","auto auto 104%")
+q.setAttribute("max-camera-orbit","auto auto 168%")
+q.setAttribute("interaction-prompt","none")
+q.setAttribute("disable-zoom","")
+q.setAttribute("auto-rotate","")
+q.setAttribute("auto-rotate-delay","1200")
+q.setAttribute("rotation-per-second","1deg")
+q.setAttribute("environment-image","neutral")
+q.setAttribute("exposure","0.94")
+q.setAttribute("shadow-intensity","0.22")
+q.setAttribute("shadow-softness","0.86")
+q.style.position="absolute"
+q.style.inset="0"
+q.style.width="100%"
+q.style.height="100%"
+q.style.display="block"
+q.style.background="transparent"
+q.style.pointerEvents="none"
+q.style.setProperty("--poster-color","transparent")
+q.style.setProperty("--progress-bar-color","transparent")
+q.style.setProperty("--progress-bar-height","0px")
+p=q.style
+p.transform="translateY(1px) scale(0.96)"
+q.style.transformOrigin="center center"
+o.append(s)
+o.append(q)
+return o},
 $S:676}
 A.xY.prototype={
 m(a){var s,r,q,p,o,n,m,l,k=this,j=null,i=k.e&&!k.c,h=k.c
@@ -109187,25 +109210,25 @@ s=r.d
 s===$&&A.b()
 return A.qk(A.cG(s,new A.aL6(r,!o,p),null),q)}}
 A.aL6.prototype={
-$2(a,b){var s,r,q,p,o,n=this,m=null,l=n.b
-if(l){s=n.a.d
+$2(a,b){var s,r,q,p,o,n,m=this,l=null,k=m.b
+if(k){s=m.a.d
 s===$&&A.b()
 s=s.x
 s===$&&A.b()
 r=s}else r=0
-q=l?Math.sin(r*3.141592653589793*2)*2.5:0
-l=A.m5(0,A.di(m,m,m,new A.a56(r,m),B.a1))
-s=n.a
+q=k?Math.sin(r*3.141592653589793*2)*2.5:0
+k=A.m5(0,A.di(l,l,l,new A.a56(r,l),B.a1))
+s=m.a
 p=s.a
-o=p.c*n.c
-p=p.f
-l=A.a([l,A.iB(A.ba(new A.xY(p,!1,!0,m),o*1.28,o),new A.i(0,q))],t.p)
+o=p.c*m.c
+n=p.f
+k=A.a([k,A.iB(A.ba(new A.xY(n,p.w&&!n,!0,l),o*1.28,o),new A.i(0,q))],t.p)
 p=s.a
 o=p.d
 if(o!=null){p=p.c
-l.push(A.dl(m,new A.aam(B.od,A.n(o)+"%",m),m,m,m,p*0,p*0.1,m))}s=s.a
-l.push(A.dl(s.c*0.04,new A.aao(s.e,m),m,m,m,m,m,m))
-return A.cj(B.J,l,B.f,B.ah,m)},
+k.push(A.dl(l,new A.aam(B.od,A.n(o)+"%",l),l,l,l,p*0,p*0.1,l))}s=s.a
+k.push(A.dl(s.c*0.04,new A.aao(s.e,l),l,l,l,l,l,l))
+return A.cj(B.J,k,B.f,B.ah,l)},
 $S:77}
 A.aam.prototype={
 m(a){var s=null,r=B.j.J(0.96),q=A.o(999),p=A.a2(B.q,1),o=A.a([new A.av(0,B.B,B.e.J(0.18),B.bJ,18)],t.V),n=A.aD(this.c,B.G,s,13),m=A.d(a).ok.at
