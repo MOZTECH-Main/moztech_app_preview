@@ -1,6 +1,6 @@
 {
-  "version": "202606050944",
-  "sourceCommit": "37baa39c8a64c86df0fb0c9808c2fb52aa36505d",
-  "deployedAt": "2026-06-05T01:44:09Z",
-  "note": "Product passport identity footer refinement"
+  "version": "202606051008",
+  "sourceCommit": "b0d0e5218082abfdd3196a1e353b398e28bf264a",
+  "deployedAt": "2026-06-05T02:08:00Z",
+  "note": "Support service flow refinement"
 }
