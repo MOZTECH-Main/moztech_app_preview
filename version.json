@@ -1,6 +1,6 @@
 {
-  "version": "202606050759",
-  "sourceCommit": "49a0809d24480a83e06195b007f0463c496e6164",
-  "deployedAt": "2026-06-05T07:59:23Z",
-  "note": "Splash brand opening logo path fix"
+  "version": "202606050827",
+  "sourceCommit": "dcd8cbedc653d079228ed73a3b6f37d08b6987ee",
+  "deployedAt": "2026-06-05T08:27:42Z",
+  "note": "Login entry permissions refinement"
 }
