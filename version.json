@@ -1,1 +1,6 @@
-{"version":"202606050753","updatedAt":"2026-06-04T23:53:06Z","sourceCommit":"b553c2bcd23f75b33337f7d76812e8afd0f8fb6d"}
+{
+  "version": "202606050816",
+  "sourceCommit": "eede625a7a40786f2787657255c4b2336549387f",
+  "deployedAt": "2026-06-05T00:16:41Z",
+  "note": "Today status insight sheets"
+}
