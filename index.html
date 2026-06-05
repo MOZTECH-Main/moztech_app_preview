@@ -50,7 +50,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 18px;
+      gap: 16px;
       pointer-events: none;
       color: rgba(255, 255, 255, 0.88);
       font-family: Poppins, "Noto Sans TC", sans-serif;
@@ -58,16 +58,18 @@
     }
 
     #moz-preloader img {
-      width: min(58vw, 240px);
-      max-height: 76px;
-      filter: brightness(0) invert(1);
-      opacity: 0.88;
+      width: min(64vw, 286px);
+      max-height: 132px;
+      opacity: 0.96;
     }
 
     #moz-preloader span {
-      font-size: 16px;
-      font-weight: 700;
-      opacity: 0.78;
+      max-width: 280px;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.35;
+      text-align: center;
+      opacity: 0.88;
     }
   </style>
   <script type="module" src="https://unpkg.com/@google/model-viewer@4.1.0/dist/model-viewer.min.js"></script>
@@ -82,8 +84,8 @@
 </head>
 <body>
   <div id="moz-preloader" aria-label="MOZTECH 載入中">
-    <img src="assets/logos/moztech_wordmark_equal_padding.svg" alt="MOZTECH">
-    <span>產品照護從這裡開始</span>
+    <img src="assets/logos/moztech_logo_white.svg" alt="MOZTECH">
+    <span>Moz innovation, more comfortable life.</span>
   </div>
   <script>
     window.addEventListener('flutter-first-frame', function () {
