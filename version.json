@@ -1,6 +1,6 @@
 {
-  "version": "202606051734",
+  "version": "202606051741",
   "sourceCommit": "37f0d0f",
-  "deployedAt": "2026-06-05T17:34:00+08:00",
-  "note": "Fixed MOZTECH splash logo SVG rendering and asset fallback."
+  "deployedAt": "2026-06-05T17:39:00+08:00",
+  "note": "Fixed MOZTECH splash logo SVG rendering and cleaned preview build output."
 }
