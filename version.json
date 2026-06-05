@@ -1,6 +1,6 @@
 {
-  "version": "202606050859",
-  "sourceCommit": "85a01fb92ac74a8bbaadbd28510bd68141b27de6",
-  "deployedAt": "2026-06-05T00:59:47Z",
-  "note": "Product service entry list refinement"
+  "version": "202606050944",
+  "sourceCommit": "37baa39c8a64c86df0fb0c9808c2fb52aa36505d",
+  "deployedAt": "2026-06-05T01:44:09Z",
+  "note": "Product passport identity footer refinement"
 }
