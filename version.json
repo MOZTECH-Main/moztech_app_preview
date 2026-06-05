@@ -1,6 +1,6 @@
 {
-  "version": "202606051716",
-  "sourceCommit": "1854a89",
-  "deployedAt": "2026-06-05T17:16:00+08:00",
-  "note": "Refined main entry guide and Capture flow with Soundcore-style service onboarding."
+  "version": "202606051734",
+  "sourceCommit": "37f0d0f",
+  "deployedAt": "2026-06-05T17:34:00+08:00",
+  "note": "Fixed MOZTECH splash logo SVG rendering and asset fallback."
 }

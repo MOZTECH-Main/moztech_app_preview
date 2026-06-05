@@ -63,6 +63,18 @@
       opacity: 0.96;
     }
 
+    #moz-preloader-wordmark {
+      display: none;
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 1;
+      color: #ffffff;
+    }
+
+    #moz-preloader-wordmark.is-visible {
+      display: block;
+    }
+
     #moz-preloader span {
       max-width: 280px;
       font-size: 15px;
@@ -84,7 +96,13 @@
 </head>
 <body>
   <div id="moz-preloader" aria-label="MOZTECH 載入中">
-    <img src="assets/assets/logos/moztech_logo_white.svg" alt="MOZTECH">
+    <img
+      src="assets/assets/logos/moztech_logo_white.svg"
+      data-fallback-src="assets/logos/moztech_logo_white.svg"
+      alt="MOZTECH"
+      onerror="if (!this.dataset.fallbackUsed) { this.dataset.fallbackUsed = '1'; this.src = this.dataset.fallbackSrc; } else { this.style.display = 'none'; document.getElementById('moz-preloader-wordmark')?.classList.add('is-visible'); }"
+    >
+    <strong id="moz-preloader-wordmark" aria-hidden="true">MOZTECH</strong>
     <span>Moz innovation, more comfortable life.</span>
   </div>
   <script>
