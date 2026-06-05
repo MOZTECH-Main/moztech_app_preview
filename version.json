@@ -1,6 +1,6 @@
 {
-  "version": "202606051145",
-  "sourceCommit": "0e0bd89998686f69a343a59e55eb0ef862872903",
-  "deployedAt": "2026-06-05T03:45:13Z",
-  "note": "Login privacy flow and mobile dialog width refinement"
+  "version": "202606051152",
+  "sourceCommit": "b96cd4756f35fef332956463d6fe39c8aaa3ec66",
+  "deployedAt": "2026-06-05T03:52:46Z",
+  "note": "Login privacy flow and mobile dialog safe width"
 }
