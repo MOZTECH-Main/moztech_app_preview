@@ -1,6 +1,6 @@
 {
-  "version": "202606050827",
-  "sourceCommit": "dcd8cbedc653d079228ed73a3b6f37d08b6987ee",
-  "deployedAt": "2026-06-05T08:27:42Z",
-  "note": "Login entry permissions refinement"
+  "version": "202606051716",
+  "sourceCommit": "1854a89",
+  "deployedAt": "2026-06-05T17:16:00+08:00",
+  "note": "Refined main entry guide and Capture flow with Soundcore-style service onboarding."
 }
