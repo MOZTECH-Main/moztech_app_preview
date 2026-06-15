@@ -33,34 +33,109 @@
   <title>MOZTECH</title>
   <link rel="manifest" href="manifest.json">
   <style>
+    :root {
+      --moz-blue: #2BB9ED;
+      --moz-blue-deep: #10A8DD;
+      --moz-blue-soft: rgba(255, 255, 255, 0.42);
+      --moz-white: #FFFFFF;
+    }
+
     html,
     body {
       width: 100%;
       height: 100%;
       margin: 0;
       overflow: hidden;
-      background: linear-gradient(180deg, #42C8F4 0%, #2BB9ED 55%, #11A7DC 100%);
+      background: linear-gradient(180deg, #43C9F4 0%, var(--moz-blue) 54%, var(--moz-blue-deep) 100%);
     }
 
     #moz-preloader {
       position: fixed;
       inset: 0;
-      z-index: 0;
+      z-index: 2147483000;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 16px;
+      overflow: hidden;
       pointer-events: none;
       color: rgba(255, 255, 255, 0.88);
       font-family: Poppins, "Noto Sans TC", sans-serif;
       letter-spacing: 0;
+      background:
+        radial-gradient(circle at 50% 57%, rgba(255, 255, 255, 0.20) 0, rgba(255, 255, 255, 0.06) 30%, rgba(255, 255, 255, 0) 56%),
+        linear-gradient(180deg, #43C9F4 0%, var(--moz-blue) 56%, var(--moz-blue-deep) 100%);
+      opacity: 1;
+      transition: opacity 460ms ease;
+    }
+
+    #moz-preloader.is-leaving {
+      opacity: 0;
+    }
+
+    #moz-preloader::before,
+    #moz-preloader::after {
+      position: absolute;
+      content: "";
+      pointer-events: none;
+    }
+
+    #moz-preloader::before {
+      width: 72vmin;
+      height: 72vmin;
+      left: 50%;
+      top: 52%;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      transform: translate(-50%, -50%) scale(0.88);
+      opacity: 0;
+      animation: mozFieldReveal 1400ms cubic-bezier(.2, .75, .18, 1) 260ms forwards;
+    }
+
+    #moz-preloader::after {
+      width: 52vw;
+      max-width: 520px;
+      height: 1px;
+      left: 50%;
+      top: calc(50% + 120px);
+      transform: translateX(-50%) scaleX(0.2);
+      transform-origin: center;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.68), transparent);
+      opacity: 0;
+      animation: mozHorizon 2200ms cubic-bezier(.2, .75, .18, 1) 760ms forwards;
+    }
+
+    .moz-preloader-lockup {
+      position: relative;
+      display: flex;
+      min-height: 240px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+      transform: translateY(7vh);
+      animation: mozLockupFloat 5200ms ease-in-out 1200ms infinite;
+    }
+
+    .moz-preloader-mark {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 320px;
+      min-height: 96px;
     }
 
     #moz-preloader img {
-      width: min(64vw, 286px);
-      max-height: 132px;
-      opacity: 0.96;
+      position: relative;
+      z-index: 2;
+      width: min(62vw, 306px);
+      max-height: 126px;
+      opacity: 0;
+      filter: drop-shadow(0 20px 32px rgba(0, 98, 134, 0.18));
+      animation:
+        mozLogoEnter 980ms cubic-bezier(.16, 1, .3, 1) 120ms forwards,
+        mozLogoBreath 3600ms ease-in-out 1300ms infinite;
     }
 
     #moz-preloader-wordmark {
@@ -73,15 +148,252 @@
 
     #moz-preloader-wordmark.is-visible {
       display: block;
+      opacity: 0;
+      animation: mozLogoEnter 980ms cubic-bezier(.16, 1, .3, 1) 120ms forwards;
     }
 
-    #moz-preloader span {
+    .moz-preloader-orbit {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      display: block;
+      border-radius: 999px;
+      opacity: 0;
+      transform: translate(-50%, -50%) rotate(-22deg);
+      animation: mozOrbitSweep 3600ms cubic-bezier(.4, 0, .2, 1) 520ms infinite;
+    }
+
+    .moz-preloader-orbit.is-primary {
+      width: 360px;
+      height: 360px;
+      margin-left: 96px;
+      border: 3px solid rgba(255, 255, 255, 0.36);
+      border-left-color: transparent;
+      border-bottom-color: transparent;
+    }
+
+    .moz-preloader-orbit.is-secondary {
+      width: 452px;
+      height: 452px;
+      margin-left: 126px;
+      border: 2px solid rgba(255, 255, 255, 0.18);
+      border-left-color: transparent;
+      border-bottom-color: transparent;
+      animation-duration: 5200ms;
+      animation-delay: 780ms;
+    }
+
+    .moz-preloader-spark {
+      position: absolute;
+      z-index: 1;
+      width: 8px;
+      height: 8px;
+      right: 16px;
+      top: 30px;
+      border-radius: 999px;
+      background: var(--moz-white);
+      box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.12), 0 0 28px rgba(255, 255, 255, 0.64);
+      opacity: 0;
+      animation: mozSpark 2200ms ease-in-out 820ms infinite;
+    }
+
+    .moz-preloader-slogan {
       max-width: 280px;
       font-size: 15px;
       font-weight: 500;
       line-height: 1.35;
       text-align: center;
-      opacity: 0.88;
+      opacity: 0;
+      text-shadow: 0 8px 20px rgba(0, 98, 134, 0.12);
+      transform: translateY(12px);
+      animation: mozSloganEnter 880ms cubic-bezier(.16, 1, .3, 1) 420ms forwards;
+    }
+
+    .moz-preloader-progress {
+      position: relative;
+      width: 132px;
+      height: 5px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.36);
+      opacity: 0;
+      transform: translateY(6px);
+      animation: mozProgressEnter 780ms ease-out 680ms forwards;
+    }
+
+    .moz-preloader-progress::after {
+      position: absolute;
+      inset: 0;
+      content: "";
+      width: 48%;
+      border-radius: inherit;
+      background: rgba(255, 255, 255, 0.96);
+      transform: translateX(-110%);
+      animation: mozProgressSweep 1700ms cubic-bezier(.45, 0, .2, 1) 880ms infinite;
+    }
+
+    @keyframes mozLogoEnter {
+      0% {
+        opacity: 0;
+        transform: translateY(18px) scale(0.94);
+      }
+      70% {
+        opacity: 1;
+        transform: translateY(-2px) scale(1.01);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @keyframes mozLogoBreath {
+      0%, 100% {
+        transform: translateY(0) scale(1);
+        filter: drop-shadow(0 20px 32px rgba(0, 98, 134, 0.18));
+      }
+      50% {
+        transform: translateY(-3px) scale(1.012);
+        filter: drop-shadow(0 26px 42px rgba(0, 98, 134, 0.24));
+      }
+    }
+
+    @keyframes mozSloganEnter {
+      0% {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      100% {
+        opacity: 0.92;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes mozOrbitSweep {
+      0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(-28deg) scale(0.96);
+      }
+      18% {
+        opacity: 0.75;
+      }
+      62% {
+        opacity: 0.36;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(88deg) scale(1.02);
+      }
+    }
+
+    @keyframes mozSpark {
+      0%, 100% {
+        opacity: 0;
+        transform: translate3d(-28px, 48px, 0) scale(0.72);
+      }
+      32% {
+        opacity: 0.9;
+      }
+      58% {
+        opacity: 0.35;
+        transform: translate3d(8px, 2px, 0) scale(1);
+      }
+    }
+
+    @keyframes mozProgressEnter {
+      0% {
+        opacity: 0;
+        transform: translateY(6px) scaleX(0.72);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scaleX(1);
+      }
+    }
+
+    @keyframes mozProgressSweep {
+      0% {
+        transform: translateX(-110%);
+      }
+      72%, 100% {
+        transform: translateX(245%);
+      }
+    }
+
+    @keyframes mozFieldReveal {
+      0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.82);
+      }
+      100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+
+    @keyframes mozHorizon {
+      0% {
+        opacity: 0;
+        transform: translateX(-50%) scaleX(0.2);
+      }
+      100% {
+        opacity: 0.86;
+        transform: translateX(-50%) scaleX(1);
+      }
+    }
+
+    @keyframes mozLockupFloat {
+      0%, 100% {
+        transform: translateY(7vh);
+      }
+      50% {
+        transform: translateY(calc(7vh - 6px));
+      }
+    }
+
+    @media (max-width: 420px) {
+      .moz-preloader-mark {
+        min-width: 280px;
+      }
+
+      #moz-preloader img {
+        width: min(72vw, 282px);
+      }
+
+      .moz-preloader-orbit.is-primary {
+        width: 310px;
+        height: 310px;
+        margin-left: 82px;
+      }
+
+      .moz-preloader-orbit.is-secondary {
+        width: 386px;
+        height: 386px;
+        margin-left: 106px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      #moz-preloader::before,
+      #moz-preloader::after,
+      #moz-preloader img,
+      #moz-preloader-wordmark.is-visible,
+      .moz-preloader-lockup,
+      .moz-preloader-orbit,
+      .moz-preloader-spark,
+      .moz-preloader-slogan,
+      .moz-preloader-progress,
+      .moz-preloader-progress::after {
+        animation: none;
+      }
+
+      #moz-preloader img,
+      #moz-preloader-wordmark.is-visible,
+      .moz-preloader-slogan,
+      .moz-preloader-progress {
+        opacity: 1;
+        transform: none;
+      }
     }
   </style>
   <script type="module" src="https://unpkg.com/@google/model-viewer@4.1.0/dist/model-viewer.min.js"></script>
@@ -96,22 +408,56 @@
 </head>
 <body>
   <div id="moz-preloader" aria-label="MOZTECH 載入中">
-    <img
-      src="assets/assets/logos/moztech_logo_white.svg"
-      data-fallback-src="/assets/assets/logos/moztech_logo_white.svg"
-      alt="MOZTECH"
-      onerror="if (!this.dataset.fallbackUsed) { this.dataset.fallbackUsed = '1'; this.src = this.dataset.fallbackSrc; } else { this.style.display = 'none'; document.getElementById('moz-preloader-wordmark')?.classList.add('is-visible'); }"
-    >
-    <strong id="moz-preloader-wordmark" aria-hidden="true">MOZTECH</strong>
-    <span>Moz innovation, more comfortable life.</span>
+    <div class="moz-preloader-lockup">
+      <div class="moz-preloader-mark">
+        <span class="moz-preloader-orbit is-primary" aria-hidden="true"></span>
+        <span class="moz-preloader-orbit is-secondary" aria-hidden="true"></span>
+        <span class="moz-preloader-spark" aria-hidden="true"></span>
+        <img
+          src="assets/assets/logos/moztech_logo_white.svg"
+          data-fallback-src="/assets/assets/logos/moztech_logo_white.svg"
+          alt="MOZTECH"
+          onerror="if (!this.dataset.fallbackUsed) { this.dataset.fallbackUsed = '1'; this.src = this.dataset.fallbackSrc; } else { this.style.display = 'none'; document.getElementById('moz-preloader-wordmark')?.classList.add('is-visible'); }"
+        >
+        <strong id="moz-preloader-wordmark" aria-hidden="true">MOZTECH</strong>
+      </div>
+      <span class="moz-preloader-slogan">Moz innovation, more comfortable life.</span>
+      <div class="moz-preloader-progress" aria-hidden="true"></div>
+    </div>
   </div>
   <script>
+    const mozPreloaderStartedAt = performance.now();
+    const mozMinPreloaderMs = 2200;
+    let mozPreloaderDismissed = false;
+
+    function dismissMozPreloader() {
+      if (mozPreloaderDismissed) {
+        return;
+      }
+
+      mozPreloaderDismissed = true;
+      const elapsedMs = performance.now() - mozPreloaderStartedAt;
+      const remainingMs = Math.max(0, mozMinPreloaderMs - elapsedMs);
+
+      window.setTimeout(function () {
+        const preloader = document.getElementById('moz-preloader');
+        if (!preloader) {
+          return;
+        }
+
+        preloader.classList.add('is-leaving');
+        window.setTimeout(function () {
+          preloader.remove();
+        }, 500);
+      }, remainingMs);
+    }
+
     window.addEventListener('flutter-first-frame', function () {
-      document.getElementById('moz-preloader')?.remove();
+      dismissMozPreloader();
     });
     window.setTimeout(function () {
-      document.getElementById('moz-preloader')?.remove();
-    }, 6000);
+      dismissMozPreloader();
+    }, 6500);
   </script>
   <!--
     You can customize the "flutter_bootstrap.js" script.
