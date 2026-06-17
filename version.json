@@ -1,5 +1,1 @@
-{
-  "version": "20260616-ui-deduplicate-product-status",
-  "builtAt": "2026-06-16T09:12:28Z",
-  "source": "codex-ui-deduplicate-product-status"
-}
+{"version":"20260617-ui-recovery-dedupe","builtAt":"2026-06-17","notes":"UI recovery dedupe and copy cleanup"}
