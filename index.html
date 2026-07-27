@@ -22,7 +22,7 @@
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="MOZTECH">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
@@ -34,8 +34,10 @@
   <style>
     :root {
       --moz-blue: #2BB9ED;
-      --moz-blue-deep: #10A8DD;
-      --moz-blue-soft: rgba(255, 255, 255, 0.42);
+      --moz-blue-deep: #159FCC;
+      --moz-blue-soft: rgba(43, 185, 237, 0.12);
+      --moz-ink: #111827;
+      --moz-muted: #667085;
       --moz-white: #FFFFFF;
     }
 
@@ -45,7 +47,7 @@
       height: 100%;
       margin: 0;
       overflow: hidden;
-      background: linear-gradient(180deg, #43C9F4 0%, var(--moz-blue) 54%, var(--moz-blue-deep) 100%);
+      background: linear-gradient(180deg, #FFFFFF 0%, #F8FCFE 66%, #EEF9FD 100%);
     }
 
     #moz-preloader {
@@ -58,14 +60,15 @@
       justify-content: center;
       overflow: hidden;
       pointer-events: none;
-      color: rgba(255, 255, 255, 0.88);
+      color: var(--moz-muted);
       font-family: Poppins, "Noto Sans TC", sans-serif;
       letter-spacing: 0;
       background:
-        radial-gradient(circle at 50% 52%, rgba(255, 255, 255, 0.18) 0, rgba(255, 255, 255, 0.06) 26%, rgba(255, 255, 255, 0) 48%),
-        linear-gradient(180deg, #43C9F4 0%, var(--moz-blue) 56%, var(--moz-blue-deep) 100%);
+        radial-gradient(circle at 50% 43%, rgba(43, 185, 237, 0.13) 0, rgba(43, 185, 237, 0.05) 22%, rgba(43, 185, 237, 0) 46%),
+        radial-gradient(circle at 16% 14%, rgba(43, 185, 237, 0.07) 0, rgba(43, 185, 237, 0) 30%),
+        linear-gradient(180deg, #FFFFFF 0%, #F9FCFE 68%, #EFF9FD 100%);
       opacity: 1;
-      transition: opacity 460ms ease;
+      transition: opacity 360ms ease;
     }
 
     #moz-preloader.is-leaving {
@@ -79,9 +82,9 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 22px;
-      transform: translateY(7vh);
-      animation: mozLockupFloat 5200ms ease-in-out 1200ms infinite;
+      gap: 16px;
+      transform: translateY(2vh);
+      animation: mozLockupFloat 4800ms ease-in-out 1100ms infinite;
     }
 
     .moz-preloader-mark {
@@ -89,10 +92,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: min(66vw, 330px);
-      min-height: 116px;
+      width: min(50vw, 220px);
+      min-height: 190px;
       overflow: hidden;
-      border-radius: 28px;
+      border-radius: 44px;
     }
 
     .moz-preloader-mark::before,
@@ -103,25 +106,29 @@
     }
 
     .moz-preloader-mark::before {
-      inset: 6px 0;
-      border-radius: 999px;
+      inset: 10px 8px;
+      border: 1px solid rgba(255, 255, 255, 0.86);
+      border-radius: 40px;
       background:
-        radial-gradient(circle at 18% 50%, rgba(255, 255, 255, 0.26) 0, rgba(255, 255, 255, 0.09) 22%, rgba(255, 255, 255, 0) 45%),
-        linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0));
+        radial-gradient(circle at 34% 22%, rgba(255, 255, 255, 0.96) 0, rgba(255, 255, 255, 0.58) 36%, rgba(255, 255, 255, 0.20) 72%),
+        linear-gradient(145deg, rgba(255, 255, 255, 0.74), rgba(239, 249, 253, 0.54));
+      box-shadow:
+        0 24px 58px rgba(16, 115, 151, 0.10),
+        inset 0 1px 0 rgba(255, 255, 255, 0.96);
       opacity: 0;
-      transform: scaleX(0.86);
+      transform: scale(0.94);
       animation: mozLogoField 1800ms cubic-bezier(.2, .75, .18, 1) 220ms forwards;
     }
 
     .moz-preloader-mark::after {
-      top: 38px;
+      top: 58px;
       left: 50%;
-      width: 58px;
-      height: 58px;
+      width: 78px;
+      height: 78px;
       border-radius: 999px;
-      border: 2px solid rgba(255, 255, 255, 0.30);
-      border-right-color: rgba(255, 255, 255, 0.04);
-      border-bottom-color: rgba(255, 255, 255, 0.08);
+      border: 2px solid rgba(43, 185, 237, 0.22);
+      border-right-color: rgba(43, 185, 237, 0.03);
+      border-bottom-color: rgba(43, 185, 237, 0.07);
       opacity: 0;
       transform: translate(-50%, -50%) rotate(-24deg) scale(0.92);
       animation: mozMarkOrbit 3000ms cubic-bezier(.4, 0, .2, 1) 520ms infinite;
@@ -130,10 +137,10 @@
     #moz-preloader img {
       position: relative;
       z-index: 2;
-      width: min(62vw, 306px);
-      max-height: 126px;
+      width: min(45vw, 196px);
+      max-height: 196px;
       opacity: 0;
-      filter: drop-shadow(0 20px 32px rgba(0, 98, 134, 0.18));
+      filter: drop-shadow(0 16px 28px rgba(21, 159, 204, 0.12));
       animation:
         mozLogoEnter 980ms cubic-bezier(.16, 1, .3, 1) 120ms forwards,
         mozLogoBreath 3600ms ease-in-out 1300ms infinite;
@@ -144,7 +151,7 @@
       font-size: 34px;
       font-weight: 700;
       line-height: 1;
-      color: #ffffff;
+      color: var(--moz-blue);
     }
 
     #moz-preloader-wordmark.is-visible {
@@ -156,12 +163,12 @@
     .moz-preloader-shine {
       position: absolute;
       z-index: 3;
-      top: 22px;
-      bottom: 22px;
+      top: 38px;
+      bottom: 38px;
       left: -34%;
       width: 26%;
       border-radius: 999px;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.34), transparent);
+      background: linear-gradient(90deg, transparent, rgba(43, 185, 237, 0.14), transparent);
       filter: blur(1px);
       opacity: 0;
       transform: skewX(-18deg);
@@ -171,11 +178,11 @@
     .moz-preloader-slogan {
       max-width: 280px;
       font-size: 15px;
-      font-weight: 500;
-      line-height: 1.35;
+      font-weight: 600;
+      line-height: 1.5;
+      color: var(--moz-muted);
       text-align: center;
       opacity: 0;
-      text-shadow: 0 8px 20px rgba(0, 98, 134, 0.12);
       transform: translateY(12px);
       animation: mozSloganEnter 880ms cubic-bezier(.16, 1, .3, 1) 420ms forwards;
     }
@@ -186,7 +193,7 @@
       height: 5px;
       overflow: hidden;
       border-radius: 999px;
-      background: rgba(255, 255, 255, 0.36);
+      background: rgba(43, 185, 237, 0.14);
       opacity: 0;
       transform: translateY(6px);
       animation: mozProgressEnter 780ms ease-out 680ms forwards;
@@ -198,7 +205,7 @@
       content: "";
       width: 48%;
       border-radius: inherit;
-      background: rgba(255, 255, 255, 0.96);
+      background: linear-gradient(90deg, var(--moz-blue), var(--moz-blue-deep));
       transform: translateX(-110%);
       animation: mozProgressSweep 1700ms cubic-bezier(.45, 0, .2, 1) 880ms infinite;
     }
@@ -221,11 +228,11 @@
     @keyframes mozLogoBreath {
       0%, 100% {
         transform: translateY(0) scale(1);
-        filter: drop-shadow(0 20px 32px rgba(0, 98, 134, 0.18));
+        filter: drop-shadow(0 16px 28px rgba(21, 159, 204, 0.12));
       }
       50% {
         transform: translateY(-3px) scale(1.012);
-        filter: drop-shadow(0 26px 42px rgba(0, 98, 134, 0.24));
+        filter: drop-shadow(0 22px 36px rgba(21, 159, 204, 0.17));
       }
     }
 
@@ -243,11 +250,11 @@
     @keyframes mozLogoField {
       0% {
         opacity: 0;
-        transform: scaleX(0.82);
+        transform: scale(0.94);
       }
       100% {
         opacity: 1;
-        transform: scaleX(1);
+        transform: scale(1);
       }
     }
 
@@ -307,27 +314,27 @@
 
     @keyframes mozLockupFloat {
       0%, 100% {
-        transform: translateY(7vh);
+        transform: translateY(2vh);
       }
       50% {
-        transform: translateY(calc(7vh - 6px));
+        transform: translateY(calc(2vh - 5px));
       }
     }
 
     @media (max-width: 420px) {
       .moz-preloader-mark {
-        width: min(76vw, 292px);
-        min-height: 108px;
+        width: min(58vw, 212px);
+        min-height: 182px;
       }
 
       #moz-preloader img {
-        width: min(72vw, 282px);
+        width: min(52vw, 188px);
       }
 
       .moz-preloader-mark::after {
-        top: 36px;
-        width: 54px;
-        height: 54px;
+        top: 56px;
+        width: 74px;
+        height: 74px;
       }
     }
 
@@ -364,25 +371,24 @@
   </script>
 </head>
 <body>
-  <div id="moz-preloader" aria-label="MOZTECH 載入中">
+  <div id="moz-preloader" role="status" aria-live="polite" aria-label="正在準備 MOZTECH">
     <div class="moz-preloader-lockup">
       <div class="moz-preloader-mark">
         <span class="moz-preloader-shine" aria-hidden="true"></span>
         <img
-          src="assets/assets/logos/moztech_logo_white.svg"
-          data-fallback-src="/assets/assets/logos/moztech_logo_white.svg"
+          src="assets/assets/logos/moztech_vertical.svg"
           alt="MOZTECH"
-          onerror="if (!this.dataset.fallbackUsed) { this.dataset.fallbackUsed = '1'; this.src = this.dataset.fallbackSrc; } else { this.style.display = 'none'; document.getElementById('moz-preloader-wordmark')?.classList.add('is-visible'); }"
+          onerror="this.style.display = 'none'; document.getElementById('moz-preloader-wordmark')?.classList.add('is-visible');"
         >
         <strong id="moz-preloader-wordmark" aria-hidden="true">MOZTECH</strong>
       </div>
-      <span class="moz-preloader-slogan">Moz innovation, more comfortable life.</span>
+      <span class="moz-preloader-slogan">裝置準備好，重要事情不漏。</span>
       <div class="moz-preloader-progress" aria-hidden="true"></div>
     </div>
   </div>
   <script>
     const mozPreloaderStartedAt = performance.now();
-    const mozMinPreloaderMs = 2200;
+    const mozMinPreloaderMs = 720;
     let mozPreloaderDismissed = false;
 
     function dismissMozPreloader() {
